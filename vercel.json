@@ -2,9 +2,9 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/main.tsx",
-      "use": "@vercel/node",
-      "config": { "includeFiles": ["dist/**"] }
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
     },
     {
       "src": "api/download.js",
