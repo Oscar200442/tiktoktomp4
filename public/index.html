@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Render App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-xl shadow-lg text-center max-w-sm w-full">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Hello, Render!</h1>
+        <p class="text-gray-600 mb-6">This is a simple web application deployed on Render using GitHub.</p>
+        <div class="flex flex-col items-center space-y-4">
+            <a href="https://render.com" target="_blank" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition duration-300">
+                Learn More about Render
+            </a>
+            <a href="https://github.com" target="_blank" class="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow-md hover:bg-gray-900 transition duration-300">
+                Explore GitHub
+            </a>
+        </div>
+    </div>
+</body>
+</html>
