@@ -1,22 +1,4 @@
-// A simple Node.js web server using Express.
-// This is the main application file, often named index.js or app.js.
-const express = require('express');
-const path = require('path');
-const { tiktokdl } = require('tiktok-downloader');
-
-const app = express();
-const port = process.env.PORT || 3000;
-
-// Middleware to parse JSON bodies
-app.use(express.json());
-
-// Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Main route to serve the HTML file
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
+2
 
 // API endpoint to handle the TikTok video download
 app.post('/download', async (req, res) => {
